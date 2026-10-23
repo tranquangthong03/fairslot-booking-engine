@@ -10,7 +10,8 @@
     "start": "node dist/server.js",
     "typecheck": "tsc --noEmit",
     "migrate": "tsx scripts/migrate.ts",
-    "typecheck:migrations": "tsc --project tsconfig.migrations.json"
+    "typecheck:migrations": "tsc --project tsconfig.migrations.json",
+    "test:db": "tsx --test tests/database-constraints.test.ts"
   },
   "repository": {
     "type": "git",
